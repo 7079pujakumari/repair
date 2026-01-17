@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            height: 50px;
+            width: 100%;
+        }
+
+        .box{
+           height: 50px;
+           width: 100%;
+            background-color: black;
+           }
+
+        .call{
+            color: white;
+           /* border: 2px solid green; */
+           height: 50px;
+           width: 50%;
+           float: left;
+           padding: 10px;
+          }
+
+        .call p{
+        font-size: 1rem;
+        color: white;
+        }
+
+        .call p a{
+        text-decoration: none;
+        color: white;
+        }
+
+        .call p i{
+        color: orange;
+        }
+
+        .email{
+        color: white;
+        /* border: 2px solid green; */
+        height: 50px;
+        width: 50%;
+        float: left;
+        padding-left: 400px;
+        padding-top: 10px;
+        }
+
+        .email p{
+        font-size: 1rem;
+        color: white;
+        }
+
+        .email p a{
+            text-decoration: none;
+            color: white;
+        }
+
+          .email p i{
+            color: orange;
+        }
+
+        header{
+            height: 100vh;
+            width: 100%;  
+        }
+
+        .box2{
+           height: 100vh;
+           width: 100%;
+           /* border: 2px solid green; */
+           background-color: lightsteelblue; 
+        }
+
+        .left{
+            height: 100vh;
+           width: 50%;
+           /* border: 2px solid green;  */
+           float: left; 
+
+        }
+
+        .left_box{
+           height: 50px;
+           width: 140px;
+           /* border: 2px solid blue; */
+           margin: 10px;
+           font-size: 25px;
+           color: blue; 
+        }
+
+        .left_box2{
+           height: 90px;
+           width: 480px;
+           /* border: 2px solid blue; */
+           margin: 50px; 
+           font-size: 40px;
+           color: blue;
+
+        }
+
+        .left_box3{
+           height: 150px;
+           width: 480px;
+           /* border: 2px solid blue; */
+           margin: 50px;
+           font-size: 20px; 
+
+        }
+
+        .button{
+            height: 50px;
+           width: 140px;
+           /* border: 2px solid blue; */
+           margin-left: 50px;
+           border-radius: 5px;
+           background-color: orange;
+           color: white; 
+           font-size: 15px;
+        }
+
+        .right{
+           height: 100vh;
+           width: 50%;
+           /* border: 2px solid green;  */
+           float: left;
+        }
+
+        .menu{
+            /* border: 2px solid red; */
+            height: 50px;
+            width: 140px;
+           right: 1200px;
+            float: right;
+            margin: 10px;
+            font-size: 30px;
+            padding-left: 100px;
+        }
+
+        .img{
+            /* border: 2px solid red; */
+            height: 400px;
+            width: 80%;
+            margin-top: 150px;
+            margin-left: 50px;
+            background: url(https://media.istockphoto.com/id/1272136549/photo/industrial-worker-at-factory.jpg?s=1024x1024&w=is&k=20&c=rwBrnBFfrap-22N0uIKmfa7hDrEq4Y3viE45XzemfOA=);
+            background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+        }
+
+        .box3{  
+           height: 80vh;
+           width: 100%;
+           /* border: 2px solid green; */
+    
+        }
+
+        .home{
+            height: 80vh;
+            width: 100%;
+            /* border: 2px solid green; */
+        }
+
+        .contain{
+            width: 25%;
+            float:left;
+            margin-top: 55px;
+            margin-left: 80px;
+            border: 4px solid whitesmoke ;
+           
+        }
+
+        .tool{
+            height: 150px;
+            width: 150px;
+            /* border: 2px solid blue; */
+            margin-left: 80px;
+            margin-top: 50px;
+            font-size: 130px;
+        }
+
+        .repair{
+            height: 50px;
+            width: 150px;
+            margin-left: 80px;
+            /* border: 2px solid blue; */
+            /* margin-top: 10px; */
+            font-size: 25px;
+            padding: 25px;
+
+        }
+        .contain:hover{
+            background-color: orange;
+            color: white;
+        } 
+
+        .slide1{
+            height: 80vh;
+            width: 100%;
+            /* border: 2px solid green; */
+        }
+        .about_left{
+            /* border: 2px solid black; */
+            height: 80vh;
+            width: 50%;
+            float: left;
+        }
+
+        .us{
+            height: 50px;
+           width: 380px;
+           /* border: 2px solid blue; */
+           margin-left: 50px;
+           margin-top: 80px;
+           font-size: 30px;
+           color: black;
+        }
+
+        .us2{
+           height: 200px;
+           width: 500px;
+           /* border: 2px solid blue; */
+           margin-left: 50px;
+           /* margin-top: 30px;  */
+           font-size: 20px;
+           color: black;
+        }
+
+        .button1{
+            height: 50px;
+           width: 140px;
+           /* border: 2px solid blue; */
+           margin-left: 50px;
+           border-radius: 5px;
+           background-color: orange;
+           color: white; 
+           font-size: 15px;
+           margin-top: 20px;
+        }
+        
+        .about_right{
+            /* border: 2px solid blue; */
+            height: 80vh;
+            width: 50%;
+            float: left;
+        }
+
+        .img2{
+             /* border: 2px solid red; */
+             height: 300px;
+            width: 450px;
+            margin-top: 80px;
+            margin-left: 100px;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBVBz2TrrgnQKPdEW8hFAIMiNDS8parUbgp-J-fmJax83J9GDYIsAxkGARg&s);
+            background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+        }
+
+        .slide2{
+            height: 80vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: lightsteelblue;
+        }
+
+        .left2{
+            height: 80vh;
+            width: 50%;
+            /* border: 2px solid brown; */
+            float: left;
+        }
+
+        .right2{
+            height: 80vh;
+            width: 50%;
+            /* border: 2px solid blue; */
+        }
+
+        .right_box2{
+           height: 140px;
+           width: 480px;
+           /* border: 2px solid green; */
+           font-size: 40px;
+           color: blue;
+           margin-left: 700px;
+           margin-top: 180px;
+        }
+
+        .right_box3{
+           height: 110px;
+           width: 480px;
+           /* border: 2px solid green; */
+           font-size: 18px;
+           color: blue;
+           margin-left: 700px;
+           margin-top: 20px;
+        }
+
+       .right_button{
+        /* border: 2px solid green; */
+        background-color: orange;
+        color: white;
+        margin-left: 700px;
+        height: 50px;
+        width: 120px;
+        border-radius: 2px;
+        margin-top: 30px;
+        padding: 10px;
+       }
+
+       .img3{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 450px;
+            margin-top: 80px;
+            margin-left: 100px;
+           background: url("https://img.freepik.com/free-photo/plumber-pointing-lateral_1368-942.jpg?size=626&ext=jpg&ga=GA1.1.1964920118.1725785259&semt=ais_hybrid");
+            background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           color: lightsteelblue;
+
+        }
+
+        .slide3{
+           height: 80vh;
+           width: 100%;
+           /* border: 2px solid green; */
+           
+        }
+
+        .our{
+            margin: 50px;
+            margin-left: 38%;
+            font-size: 40px;
+        }
+
+          .b1{
+            height: 230px;
+            width: 200px;
+            /* border: 2px solid black; */
+            display: inline block;
+            margin-left: 280px;
+            float: left;
+        } 
+
+          .b2{
+            height: 230px;
+            width: 200px;
+            /* border: 2px solid black; */
+            display: inline block;
+            margin-left: 50px;
+            float: left;
+        }
+
+          .b3{
+            height: 230px;
+            width: 200px;
+            /* border: 2px solid black; */
+            display: inline block;
+            margin-left: 50px;
+            float: left;
+            
+        } 
+
+       .tool2{
+        height: 100px;
+        width: 110px;
+        /* border: 2px solid blue; */
+        margin-left: 45px;
+        font-size: 85px;
+        padding: 5px;
+       }
+
+       .maint{
+        height: 40px;
+        width: 120px;
+        /* border: 2px solid green; */
+        margin-left: 45px;
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 20px;
+       }
+
+       .ele{
+        height: 40px;
+        width: 120px;
+        /* border: 2px solid green; */
+        margin-left: 45px;
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 20px;
+       }
+
+       .plum{
+        height: 40px;
+        width: 120px;
+        /* border: 2px solid green; */
+        margin-left: 45px;
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 20px;
+       }
+
+       .m1{
+        height: 80px;
+        width: 170px;
+        /* border: 2px solid green; */
+        margin-top: 5px;
+        font-size: 15px;
+       margin-left: 15px;
+       text-align: center;
+       }
+
+       .button4{
+            height: 50px;
+           width: 140px;
+           border: 2px solid blue;
+           background-color: blue;
+           color: white; 
+           font-size: 15px;
+           border-radius: 2px;
+           margin-top: 250px;
+           margin-left: -410px;
+            }
+
+        .slide4{
+            height: 100vh;
+            width: 100%;
+            /* border: 2px solid red; */
+        }
+
+        .say{
+            margin: 50px;
+            margin-left: 30%;
+            font-size: 40px;
+        }
+
+        .say1{ 
+        height: 280px;
+        width: 280px;
+        border: 2px solid wheat;
+        display: inline block;
+        margin-left: 350px;
+        float: left;
+       }
+
+       .say2{ 
+        height: 280px;
+        width: 280px;
+        border: 2px solid wheat;
+        display: inline block;
+        margin-left: 50px;
+        float: left;
+    }
+
+    .circle{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        /* border: 2px solid blue; */
+        float: left;
+        margin-top: 10px;
+    }
+
+    .img4{
+            /* border: 2px solid red; */
+           height: 150px;
+           width: 150px;
+           background: url("https://images.pexels.com/photos/2505026/pexels-photo-2505026.jpeg");
+            background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           color: lightsteelblue;
+           border-radius: 50%;
+           margin-top: -1px;
+           float: left;
+    }
+    .img5{
+        /* border: 2px solid red; */
+        height: 150px;
+            width: 150px;
+           margin-top: -1px;
+           background: url("https://images.pexels.com/photos/842548/pexels-photo-842548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=");
+            background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           color: lightsteelblue;
+           border-radius: 50%;
+           
+
+    }
+
+    .name{
+        height: 40px;
+        width: 128px;
+        /* border: 2px solid red; */
+        margin-left: 150px;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+
+    .star{
+        height: 50px;
+        width: 128px;
+        margin-left: 150px;
+        margin-top: -80px;
+        /* border: 2px solid green; */
+        float: left;
+        font-size: 25px;
+        color: yellow;
+    }
+    .para{
+        /* border: 2px solid black; */
+        width: 280px;
+        height: 120px;
+        margin-top: 100px;
+    }
+    .comma{
+        color: black;
+        font-size: 50px;
+        margin-left: 100px;
+        margin-top: -40px;
+    }
+    .small_box{
+        height: 40px;
+        width: 40px;
+        /* border: 2px solid blue; */
+        margin-left: 240px;
+        font-size: 25px;
+        padding: 5px;
+        background-color: blue;
+        color: white;
+    }
+
+    .small_box1{
+        height: 40px;
+        width: 40px;
+        /* border: 2px solid blue; */
+        font-size: 25px;
+        padding: 5px;
+        background-color: blue;
+        color: white;
+       
+    }
+
+    .slide5{
+        height: 130vh;
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+    .us_left{
+        height: 130vh;
+        width: 50%;
+        /* border: 2px solid green; */
+        float: left;
+    }
+    .us_right{
+        height: 130vh;
+        width: 50%;
+        /* border: 2px solid green; */
+        float: left;
+    }
+    .contact1{
+        height: 50px;
+        width: 280px;
+        /* border: 2px solid red; */
+        margin-left: 100px;
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .nam{
+        height: 50px;
+        width: 45%;
+        border: 2px solid whitesmoke;
+        margin-left: 100px;
+        font-size: 25px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .no{
+        height: 50px;
+        width: 45%;
+        border: 2px solid whitesmoke;
+        margin-left: 100px;
+        font-size: 25px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .mail{
+        height: 50px;
+        width: 45%;
+        border: 2px solid whitesmoke;
+        margin-left: 100px;
+        font-size: 25px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .mess{
+        height: 150px;
+        width: 45%;
+        border: 2px solid whitesmoke;
+        margin-left: 100px;
+        font-size: 25px;
+        margin-top: 50px;
+        padding-top: 55px;
+        padding-left: 10px;
+    }
+    .send{
+        height: 50px;
+        width: 150px;
+        /* border: 2px solid black; */
+        background-color: blue;
+        color: white;
+        margin-top: 30px;
+        padding: 10px;
+        margin-left: 100px;
+    }
+    .page{
+        height: 75%;
+        width: 99%;
+        /* border: 2px solid black; */
+         margin-left: 3px;
+        margin-top: 23%;
+        background: url(https://images.pexels.com/photos/479356/pexels-photo-479356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    }
+
+    .google{
+       border: 2px solid whitesmoke;
+        width: 97%;
+        height: 65%;
+        padding: 15px;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 7px;
+        background-color: white;
+    }
+    
+    .map{
+        /* border: 2px solid green; */
+        width: 65%;
+        height: 65px;
+        padding: 15px;
+        font-size: 20px;
+        margin-top: 80px;
+
+    }
+
+    .web{
+        /* border: 2px solid green; */
+        width: 55%;
+        height: 55px;
+        padding: 15px;
+        font-size: 20px;
+        margin-top: 40px;
+
+    }
+
+    .ok{
+        /* border: 2px solid green; */
+        width: 150px;
+        height: 55px;
+        padding-left: 55px;
+        padding-top: 15px;
+        font-size: 20px;
+        margin-top: -50px;
+        margin-left: 400px;
+        background-color: blue;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .slide6{
+        height: 130vh;
+        width: 100%;
+        /* border: 2px solid green; */
+        background-color: darkblue;
+    }
+    .get{
+        height: 50px;
+        width: 240px;
+        /* border: 2px solid red; */
+        font-size: 30px;
+        margin-left: 40%;
+        color: white;
+        margin-top: 50px;
+    }
+
+    .c1{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        /* border: 2px solid red; */
+        margin-left: 15%;
+        margin-top: 5%;
+        background-color: blue;
+        color: white;
+        padding: 28px;
+        font-size: 40px;
+    }
+    .line{
+        width: 245px;
+        border: 1px solid white;
+        margin-left: 23%;
+        margin-top: -4%;
+        
+    }
+
+    .c2{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        /* border: 2px solid red; */
+        margin-left: 43%;
+        margin-top: -4%;
+        background-color: blue;
+        color: white;
+        padding: 28px;
+        font-size: 40px;
+    }
+
+    .line2{
+        width: 245px;
+        border: 1px solid white;
+        margin-left: 51%;
+        margin-top: -4%;
+    }
+
+    .c3{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        /* border: 2px solid red; */
+        margin-left: 68%;
+        margin-top: -4%;
+        color: white;
+        background-color: blue;
+        padding: 28px;
+        font-size: 40px;
+        
+    }
+
+    .dum{
+        /* border: 2px solid red; */
+        height: 55px;
+        width: 200px;
+        margin-left: 13%;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+    }
+    .numb{
+        /* border: 2px solid red; */
+        height: 50px;
+        width: 200px;
+        margin-left: 40%;
+        margin-top:-44px ;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        
+    }
+
+    .com{
+        /* border: 2px solid red; */
+        height: 50px;
+        width: 200px;
+        margin-left: 65%;
+        margin-top:-44px ;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        
+    }
+
+    .follow{
+        height: 50px;
+        width: 240px;
+        /* border: 2px solid red; */
+        font-size: 30px;
+        margin-left: 41%;
+        color: white;
+        margin-top: 50px;
+    }
+
+    .ins{
+        height: 50px;
+        width: 230px;
+        /* border: 2px solid red; */
+        font-size: 40px;
+        margin-left: 38%;
+        color: blue;
+        background-color: white;
+        margin-top: 30px;
+        padding-left:20px;
+    }
+
+    
+    .wl{
+        width: 945px;
+        border: 1px solid white;
+        margin-left: 10%;
+        margin-top: 90px;
+      
+    }
+
+    .design{
+        margin-left: 35%;
+        font-size: 20px;
+        color: white;
+    }
+   
+   
+
+   
+  
+
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box">
+            <div class="call">
+            <p><i class="ri-phone-fill"></i>Call:<a href="tel: +01123455678990"> +01123455678990</a></p>
+            </div>
+            <div class="email">
+            <p><i class="ri-mail-fill"></i>Email:<a href="Email: mail@domain.com"> mail@domain.com</a></p>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="box2">
+            <div class="left">
+                <div class="left_box">INANCE</div>
+                <div class="left_box2">Repair and Maintenance Services</div>
+                <div class="left_box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, provident perspiciatis in aperiam atque nam, vel, eaque quo dignissimos perferendis quas? Non maxime omnis provident incidunt quas voluptate rem id quam quia commodi, dicta porro explicabo dignissimos esse temporibus?</div>
+                <button class="button">CONTACT US</button>
+            </div>
+            <div class="right">
+            <div class="menu"><i class="ri-menu-line"></i></div>
+            <div class="img"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="box3">
+        <div class="home">
+        <div class="contain">
+        <div class="tool"><i class="ri-tools-line"></i></div>
+        <div class="repair">REPAIR</div>
+        </div>
+        <div class="contain">
+        <div class="tool"><i class="ri-home-wifi-line"></i></div>
+        <div class="repair">IMPROVE</div>
+        </div>
+        <div class="contain">
+        <div class="tool"><i class="ri-home-smile-line"></i></div>
+        <div class="repair">MAINTAIN</div>
+        </div>
+        </div>
+       </div>
+        </main>
+       
+        <section>
+            <div class="slide1">
+            <div class="about_left">
+            <div class="us">ABOUT US</div>
+            <div class="us2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora mollitia, placeat dolorum eaque rem aperiam esse cum voluptatum sapiente odit necessitatibus earum? Sint corrupti odit molestiae similique! Asperiores, laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias quibusdam beatae optio vero aut iure sit. </div>
+            <button class="button1">READ MORE</button>
+            </div>
+            <div class="about_right">
+            <div class="img2"></div>
+            </div>
+            </div>
+        </section>
+        <div class="slide2">
+            <div class="left2">
+                <div class="img3"></div>
+            </div>
+            <div class="right2">
+                <div class="right_box2">WE PROVIDE PROFESSIONAL HOME SERVICES.</div>
+                <div class="right_box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, provident perspiciatis in aperiam atque nam, vel, eaque quo dignissimos perferendis quas? Non maxime omnis provident incidunt quas voluptate rem id quam quia commodi, dicta porro explicabo dignissimos esse temporibus?</div>
+                <div class="right_button"> READ MORE</div>
+               </div>
+            </div>
+            <div class="slide3">
+                <div class="our">OUR SERVICES</div>
+                <div class="b1">
+                    <div class="tool2"><i class="ri-tools-fill"></i></div>
+                    <div class="maint">Maintenance</div>
+                    <div class="m1"> when looking at its layout.The point of using lorem ipsum is thst it has a ,ore or less normal</div>
+                </div>
+                <div class="b2">
+                    <div class="tool2"><i class="ri-tools-fill"></i></div>
+                    <div class="ele">Electrical</div>
+                    <div class="m1"> when looking at its layout.The point of using lorem ipsum is thst it has a ,ore or less normal</div>
+                </div>
+                <div class="b3">
+                    <div class="tool2"><i class="ri-tools-fill"></i></div>
+                    <div class="plum">Plumbing</div>
+                    <div class="m1"> when looking at its layout.The point of using lorem ipsum is thst it has a ,ore or less normal</div>
+                </div>
+               <button class="button4">VIEW MORE</button>
+             </div>
+
+            <div class="slide4">
+
+            <div class="say">WHAT OUR CLENTS SAY</div>
+            <div class="say1">
+            <div class="circle">
+                <div class="img4"></div>
+            </div>
+            <div class="name">Jhon Morik </div>
+            <div class="star"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"><div class="comma">"</div></i></div>
+            <div class="para">Chunks as necessary , making this the first true generator on the internet. it use a dictionary of over 200 latin words,combine with a handful of model sentence structures, to generate lorem ipsum.</div>
+            <div class="small_box"><i class="ri-arrow-left-line"></i></div>
+            </div>
+
+            <div class="say2">
+            <div class="circle">
+                <div class="img5"></div>
+            </div>
+            <div class="name">Jhon Morik </div>
+            <div class="star"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <div class="comma">"</div></div>
+            <div class="para">Chunks as necessary , making this the first true generator on the internet. it use a dictionary of over 200 latin words,combine with a handful of model sentence structures, to generate lorem ipsum.</div>
+            <div class="small_box1"><i class="ri-arrow-right-line"></i></div>
+            </div>
+            </div>
+            <div class="slide5">
+            <div  class="us_left">
+                <div class="contact1">CONTACT US</div>
+                <div class="nam">Name</div>
+                <div class="no">Phone Number</div>
+                <div class="mail">Email</div>
+                <div class="mess">Message</div>
+            <button class="send">SEND</button>
+            </div>
+
+            <div class="us_right">
+            <div class="page">
+                <div class="google">Google
+                <div class="map">This page can't load Google Maps correctly.</div>
+                <div class="web">Do you own this website</div>
+                <div class="ok">OK</div>
+            </div> 
+            </div>
+                   
+            </div>
+            </div>
+            <div class="slide6">
+                <div class="get">GET IN TOUCH</div>
+                <div class="c1"><i class="ri-map-pin-line"></i></div>
+                <div class="line"></div>
+                
+                <div class="c2"><i class="ri-phone-line"></i></div>
+               
+                <div class="line2"></div>
+                <div class="c3"><i class="ri-mail-line"></i></div>
+                <div class="dum">Lorem ipsum is simply dummy text</div>
+                <div class="numb">+02 1234567890</div>
+                <div class="com">mail@domain.com</div>
+                <div  class="follow">FOLLOW US</div>
+                <div class="ins"><i class="ri-facebook-fill"></i><i class="ri-twitter-fill"></i><i class="ri-youtube-fill"></i><i class="ri-instagram-line"></i></div>
+                <div class="wl"></div>
+                <div class="design">C 2024 All Right Reserved .By HTML Design</div>
+            </div>
+
+        
+</body>
+</html>
